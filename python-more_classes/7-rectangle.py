@@ -72,4 +72,9 @@ class Rectangle:
         return a string representation of the rectangle
         to be able to create new instance using eval()
         """
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
+    def __del__(self):
+        """prints deletion message"""
+        Rectangle.number_of_instances = Rectangle.number_of_instances - 1
+        print("Bye rectangle...")
