@@ -20,4 +20,4 @@ def pascal_triangle(n):
                 ans.append(list[i] + list[i + 1])
                 i = i + 1
             answer.append(ans)
-    return answer;jl;lf
+    return answer
